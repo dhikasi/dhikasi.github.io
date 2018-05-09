@@ -1,0 +1,104 @@
+ <!DOCTYPE html>
+<html lang="en">
+	<head>
+	<script src="bootstrap-3.3.7/docs/assets/js/vendor/jquery.min.js"></script>
+  	<script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
+	<meta charset="UTF-8">
+	<title>Mengenal Jawa dan Keindahannya</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+			<meta http-equiv="X-UA-Compatible" content="IE=edge">
+				<meta name="viewport" content="width=device-width, initial-scale=1">
+					<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+					<title>Bootstrap 101 Template</title>
+					<!-- Bootstrap -->
+					<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+						<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+						<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+						<!--[if lt IE 9]>
+						<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+						<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+						<![endif]-->
+					
+					</head>
+<body>
+<nav>
+    <ul>
+       <li><a href="Halaman utama.html">Halaman utama</a></li>
+       <li><a href="Di jawa timur.html">Di jawa timur</a></li>
+	    <li><a href="Di jawa tengah.html">Di jawa tengah</a></li>
+		 <li><a href="Di jawa barat.html">Di jawa barat</a></li>
+       <li><a href="Contact.html">Contact </a></li>
+    </ul>
+</nav>
+
+
+
+<div class="container">
+	
+	<div class="header">
+		<h1>Mengenal Jawa dan Keindahannya</h1>
+		<h4>dibawah ini salah satu tempat wisata dan makanan khas jawa timur,Jawa tengah, dan Jawa barat</h4>
+
+	
+	</div> <!--/ .header -->
+
+	<div class="main">
+		
+		<div class="left">
+			<h3>1.Jakarta</h3>
+			<p>Daerah Khusus Ibukota Jakarta (DKI Jakarta) adalah ibu kota negara dan kota terbesar di Indonesia. Jakarta merupakan satu-satunya kota di Indonesia yang memiliki status setingkat provinsi. Jakarta terletak di pesisir bagian barat laut Pulau Jawa. Dahulu pernah dikenal dengan beberapa nama di antaranya Sunda Kelapa, Jayakarta, dan Batavia. Di dunia internasional Jakarta juga mempunyai julukan J-Town, atau lebih populer lagi The Big Durian karena dianggap kota yang sebanding New York City (Big Apple) di IndonesiaJakarta memiliki luas sekitar 661,52 km² (lautan: 6.977,5 km²), dengan penduduk berjumlah 10.187.595 jiwa (2011). Wilayah metropolitan Jakarta (Jabodetabek) yang berpenduduk sekitar 28 juta jiwa, merupakan metropolitan terbesar di Asia Tenggara atau urutan kedua di dunia.</p>
+		    <p><img src="jakarta.png" height="170" width="230" </p>
+		</div> <!--/ .header -->
+
+		<div class="middle">
+			<h3>2.Daera istimewa Yogyakarta</h3>
+			<p>Daerah Istimewa Yogyakarta (Jawa: Dhaérah Istiméwa Ngayogyakarta) adalah Daerah Istimewa setingkat provinsi di Indonesia yang merupakan peleburan Negara Kesultanan Yogyakarta dan Negara Kadipaten Paku Alaman. Daerah Istimewa Yogyakarta terletak di bagian selatan Pulau Jawa, dan berbatasan dengan Provinsi Jawa Tengah dan Samudera Hindia. Daerah Istimewa yang memiliki luas 3.185,80 km2 ini terdiri atas satu kotamadya, dan empat kabupaten, yang terbagi lagi menjadi 78 kecamatan, dan 438 desa/kelurahan. Menurut sensus penduduk 2010 memiliki populasi 3.452.390 jiwa dengan proporsi 1.705.404 laki-laki, dan 1.746.986 perempuan, serta memiliki kepadatan penduduk sebesar 1.084 jiwa per km2</p>
+			<p><img src="yogyakarta.jpg" height="500" width="500" </p>
+		</div> <!--/ .middle -->
+
+		<div class="right">
+			<h3>3. Surabaya</h3>
+			<p>Kota Surabaya adalah ibu kota Provinsi Jawa Timur, Indonesia, sekaligus kota metropolitan terbesar di provinsi tersebut. Surabaya merupakan kota terbesar kedua di Indonesia setelah Jakarta. Kota ini terletak 796 km sebelah timur Jakarta, atau 415 km sebelah barat laut Denpasar, Bali. Surabaya terletak di pantai utara Pulau Jawa bagian timur dan berhadapan dengan Selat Madura serta Laut Jawa.
+
+Surabaya memiliki luas sekitar 350,54 km² dengan penduduknya berjumlah 2.765.487 jiwa (2010). Daerah metropolitan Surabaya yaitu Gerbangkertosusila yang berpenduduk sekitar 10 juta jiwa, adalah kawasan metropolitan terbesar kedua di Indonesia setelah Jabodetabek. Surabaya dilayani oleh sebuah bandar udara, yakni Bandar Udara Internasional Juanda, serta dua pelabuhan, yakni Pelabuhan Tanjung Perak dan Pelabuhan Ujung.</p>
+			<p><img src="surabaya1.jpg" height="200" width="230" </p>
+		</div> <!--/ .right -->
+
+	</div> <!--/ .main -->
+	
+	<div class="footer">
+		<div id="piechart"></div>
+
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+<script type="text/javascript">
+// Load google charts
+google.charts.load('current', {'packages':['corechart']});
+google.charts.setOnLoadCallback(drawChart);
+
+// Draw the chart and set the chart values
+function drawChart() {
+  var data = google.visualization.arrayToDataTable([
+  ['Task', 'Hours per Day'],
+  ['Jatim', 8],
+  ['Jateng', 11],
+  ['Jabar', 9],
+]);
+
+  // Optional; add a title and set the width and height of the chart
+  var options = {'title':'chart wisata di Jawa', 'width':550, 'height':400};
+
+  // Display the chart inside the <div> element with id="piechart"
+  var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+  chart.draw(data, options);
+}
+// kondisi //
+
+</script>
+		<p>Copyright &copy; 2018 </a></p>
+	</div> <!--/ .footer -->
+</div>
+</body>
+</html>
