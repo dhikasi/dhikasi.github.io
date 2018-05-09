@@ -32,6 +32,26 @@
        <li><a href="Contact.html">Contact </a></li>
     </ul>
 </nav>
+	<center><span class="salam"></span></center>
+					<script>
+function startTimeSalam(){
+var ucapanSalam = "";
+var todaySalam=new Date();
+var hSalam=todaySalam.getHours();
+var mSalam=todaySalam.getMinutes();
+var sSalam=todaySalam.getSeconds();
+mSalam=checkTime(mSalam);
+sSalam=checkTime(sSalam);
+if (hSalam < 4) {ucapanSalam = "Selamat Malam gank"}
+else {if (hSalam < 11) {ucapanSalam = "Selamat Pagi gank" } 
+else {if (hSalam < 16) {ucapanSalam = "Selamat Siang gank"}
+else {if (hSalam < 20) {ucapanSalam = "Selamat Sore gank"}
+else {ucapanSalam = "Selamat Malam BRO";}}}}
+$(".salam").html(hSalam+":"+mSalam+":"+sSalam+" "+ucapanSalam);
+tSalam=setTimeout('startTimeSalam()',500);}
+function checkTime(i){if (i<10){i="0" + i;}return i;}
+window.onload = startTimeSalam();
+</script>
 
 
 
